@@ -74,3 +74,13 @@ http://localhost:8080
 - Connected primary CTAs to a Google Calendar event template for ravi.bsa@gmail.com.
 - Added contact information and newsletter section.
 - Preserved the existing CSS file, color scheme, and visual formatting system.
+
+## Requested navigation and form refinements
+
+- Increased logo and brand-name size.
+- Changed Frameworks nav to Our Approach and linked it to the How it works section.
+- Added AI Solutions top navigation and linked it to the AI Solutions section.
+- Removed Proof from top navigation.
+- Moved AI Solutions and Agentic PMO below How it works.
+- Changed top CTA to Book a Consultation.
+- Enhanced consultation form field length and added a dark form boundary/background.
