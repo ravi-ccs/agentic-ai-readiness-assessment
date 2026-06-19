@@ -2,16 +2,26 @@
 
 Updated landing page for Champlain Consulting Services / Ravi Shankar.
 
-## Source document
+## Latest update
 
-This version uses:
+This version applies the uploaded Stitch design package:
+
+`/mnt/c/Users/rskcc/Downloads/stitch_champlain_ai_consulting_hub (1).zip`
+
+Extracted design reference folder:
+
+`/mnt/c/Users/rskcc/Documents/CCS_Landing_Page/stitch_champlain_ai_consulting_hub_design_20260618_232025`
+
+The design was adapted from the Aetheric Professional system: airy light mode, glassmorphism, deep navy, neon cyan CTA accents, Hanken Grotesk typography, Geist labels, and rounded cloud-like cards.
+
+## Brand source
 
 `/mnt/c/Users/rskcc/personal_brand/Personal Brand file v 1.1`
 
 ## Files
 
 - `index.html` — landing page markup
-- `styles.css` — responsive visual design
+- `styles.css` — responsive Aetheric Professional inspired design
 - `README.md` — project notes and deployment instructions
 - `landing-page-strategy.md` — strategy, offer, CTA, proof, and section plan
 
@@ -47,29 +57,9 @@ Then visit:
 http://localhost:8080
 ```
 
-## Manual GitHub deployment
-
-```bash
-git init
-git add .
-git commit -m "Update AI readiness landing page"
-git branch -M main
-git remote add origin <repo-url>
-git push -u origin main
-```
-
-## Manual Vercel deployment
-
-1. Go to https://vercel.com/new
-2. Import the GitHub repository.
-3. Framework preset: Other.
-4. Build command: leave blank.
-5. Output directory: leave blank / root.
-6. Deploy.
-
 ## Missing proof/assets to add later
 
-- Headshot or brand image.
+- Headshot or founder image.
 - 1-3 named case studies.
 - Testimonials, if available.
 - Calendar booking link.
