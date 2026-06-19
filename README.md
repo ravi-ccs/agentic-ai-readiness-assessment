@@ -64,3 +64,13 @@ http://localhost:8080
 - Testimonials, if available.
 - Calendar booking link.
 - Downloadable AI Readiness Assessment or checklist lead magnet.
+
+## Landing page updates v0.1 applied
+
+- Added logo image from the Word document.
+- Added AI Solutions section for solopreneurs and SMBs.
+- Reduced proof section to 35+ Years Exp., 100M+ Projects Delivered, and Data + AI.
+- Added Book a Consultation form with Services of Interest dropdown.
+- Connected primary CTAs to a Google Calendar event template for ravi.bsa@gmail.com.
+- Added contact information and newsletter section.
+- Preserved the existing CSS file, color scheme, and visual formatting system.

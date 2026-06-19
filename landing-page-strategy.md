@@ -42,3 +42,9 @@ Hero → SMB AI gap → Better future state → AIM/SCALE frameworks → Agentic
 
 ## Version 2 opportunities
 Add a real booking link, headshot, case studies, testimonials, and a downloadable AI Readiness checklist/scorecard.
+
+## Landing page updates v0.1 content update
+
+Requested document: `/mnt/c/Users/rskcc/personal_brand/Landing page updates v0.1.docx`
+
+Applied without changing `styles.css`, color scheme, or the Aetheric Professional formatting system. Updates added: logo, AI Solutions section, consultation form, Google Calendar CTA, contact information, newsletter section, and revised three-card credibility section.
