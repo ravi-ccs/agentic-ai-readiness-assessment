@@ -1,16 +1,41 @@
-# Agentic Business Readiness Assessment Landing Page
+# AI Readiness Assessment Landing Page
 
-Static landing page for Ravi Shankar / Champlain Consulting Services.
+Updated landing page for Champlain Consulting Services / Ravi Shankar.
+
+## Source document
+
+This version uses:
+
+`/mnt/c/Users/rskcc/personal_brand/Personal Brand file v 1.1`
 
 ## Files
 
 - `index.html` — landing page markup
 - `styles.css` — responsive visual design
+- `README.md` — project notes and deployment instructions
 - `landing-page-strategy.md` — strategy, offer, CTA, proof, and section plan
+
+## Positioning
+
+Champlain Consulting Services helps SMB owners, solopreneurs, and growth-oriented business leaders increase revenue, reduce operational costs, and scale efficiently through Agentic AI, intelligent automation, and AI-driven project delivery.
+
+## Offer
+
+AI Readiness Assessment → Strategy Roadmap → Agent Implementation
+
+## CTA placeholder
+
+Current CTA uses:
+
+```text
+mailto:ravi.bsa@gmail.com?subject=AI%20Readiness%20Discovery%20Call
+```
+
+Replace it with a Calendly, Microsoft Bookings, HubSpot, or other scheduling link when available.
 
 ## Local preview
 
-Open `index.html` directly in a browser, or run a simple local server:
+Open `index.html` directly in a browser, or run:
 
 ```bash
 python3 -m http.server 8080
@@ -22,22 +47,12 @@ Then visit:
 http://localhost:8080
 ```
 
-## CTA placeholder
-
-Current CTA uses:
-
-```text
-mailto:ravi.bsa@gmail.com?subject=AI%20Opportunity%20Discovery%20Call
-```
-
-Replace it with a Calendly, Microsoft Bookings, HubSpot, or other scheduling link when available.
-
 ## Manual GitHub deployment
 
 ```bash
 git init
 git add .
-git commit -m "Add agentic AI readiness assessment landing page"
+git commit -m "Update AI readiness landing page"
 git branch -M main
 git remote add origin <repo-url>
 git push -u origin main
@@ -52,10 +67,10 @@ git push -u origin main
 5. Output directory: leave blank / root.
 6. Deploy.
 
-## Version 2 improvements
+## Missing proof/assets to add later
 
-- Replace email CTA with a booking link.
-- Add a real headshot or brand image.
-- Add 1-3 short case studies from existing proof points.
-- Add a downloadable Agentic Business Readiness Scorecard PDF.
-- Add analytics and conversion tracking.
+- Headshot or brand image.
+- 1-3 named case studies.
+- Testimonials, if available.
+- Calendar booking link.
+- Downloadable AI Readiness Assessment or checklist lead magnet.

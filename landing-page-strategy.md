@@ -1,42 +1,49 @@
-# Landing Page Strategy
+# Landing Page Strategy - Updated from Personal Brand file v 1.1
 
-Prepared for: Ravi Shankar / Champlain Consulting Services
+Source reviewed: `/mnt/c/Users/rskcc/personal_brand/Personal Brand file v 1.1`
+Prepared for: Champlain Consulting Services / Ravi Shankar
 
 ## Page goal
-Convert owner-led SMBs and solopreneurs into discovery-call leads for an AI Business Readiness and Opportunity Assessment.
+Convert SMB owners, solopreneurs, and growth-oriented business leaders into discovery-call leads for an AI Readiness Assessment that leads to a strategy roadmap and agent implementation.
 
 ## Target visitor
-Owner-led service businesses with 5-100 employees that are constrained by manual operations, slow customer response, fragmented tools, inconsistent reporting, or limited staff capacity.
+SMB owners, solopreneurs, and growth-oriented business leaders who want to grow revenue, reduce operational costs, improve customer experience, and scale efficiently through Agentic AI and intelligent automation.
 
 ## Core promise
-Identify the highest-ROI AI automation opportunities, redesign the process, and create a practical roadmap for AI agents that improve revenue, efficiency, customer response, and operating scale.
+Grow revenue and efficiency without adding headcount by using Agentic AI, intelligent automation, and AI-driven project delivery.
 
 ## Primary offer
-Agentic Business Readiness Assessment — a practical diagnostic to find the top AI agent and automation opportunities in the business.
+AI Readiness Assessment → Strategy Roadmap → Agent Implementation.
 
 ## Primary CTA
-Book an AI Opportunity Discovery Call.
+Book an AI Readiness Discovery Call.
 
-Current CTA link: mailto:ravi.bsa@gmail.com?subject=AI%20Opportunity%20Discovery%20Call
+Current CTA link: `mailto:ravi.bsa@gmail.com?subject=AI%20Readiness%20Discovery%20Call`
 Replace with a calendar booking link when available.
 
 ## Main objections handled
-- “AI feels overwhelming.” → Start with a focused assessment, not a tool purchase.
-- “We do not have a big team.” → Designed for SMBs and owner-led businesses.
-- “Will this replace people?” → Focuses on human oversight, governance, and capacity, not replacement.
-- “How do we know what to automate first?” → Uses an AI Value Map and readiness scorecard.
-- “Will this become another failed technology project?” → Ravi brings project delivery, PMO, governance, and benefits realization discipline.
+- “AI feels overwhelming.” → Start with assessment and strategy, not a tool purchase.
+- “We do not know where AI will create ROI.” → Use AIM Framework™ and SCALE AI™ to identify and prioritize opportunities.
+- “We cannot add more headcount.” → Focus on automation, productivity, customer response, and operational cost reduction.
+- “AI projects fail without governance.” → Position Ravi’s project delivery, PMO, regulatory, cloud, data, and transformation background as risk reduction.
+- “Will this be too enterprise-heavy for SMBs?” → Bring enterprise-grade delivery discipline in a practical SMB-ready model.
 
-## Proof used
-Only proof points from the brand strategy are used:
-- 25+ years across project delivery, PMO, portfolio governance, operations, managed services, business analysis, and digital transformation
-- >95% SLA compliance in managed services contexts
-- Around 10% contract margin improvement
-- Around 12% cost-per-ticket reduction
-- Around 25% portfolio ROI improvement through governance and prioritization
+## Proof to use
+Only proof stated in the source document:
+- 25+ years across Pharma, Healthcare, Telecom, Data, Cloud, PMO, Agile, and AI.
+- Managed $10M+ programs.
+- Led global teams.
+- Delivered Enterprise PMOs.
+- Experience with regulatory and GxP initiatives.
+- Data and AI transformation program experience.
+- Developed KPI and ROI frameworks to reduce manual workloads, improve lead conversion, accelerate customer response, and increase productivity.
 
 ## Recommended section structure
-Hero → Problem → Outcome → AI Value Map → Offer → Benefits → Proof → 5D Method → Fit / Not Fit → FAQ → Final CTA
+Hero → Pain → Outcome → AIM Framework™ → SCALE AI™ → Offer → Benefits → Proof → How it works → Fit / Not Fit → FAQ → Final CTA
 
 ## Design direction
-Premium consultant/advisor style with a modern Agentic AI feel: dark navy, white cards, cyan/blue accents, structured sections, business-outcome language, and mobile-first responsive design.
+Premium consultant/advisor style with a modern Agentic AI feel. Dark navy, crisp white cards, cyan/blue accents, structured executive-level proof, and a business-transformation tone rather than generic SaaS styling.
+
+## Notes
+- Use “Principal Consultant - Agentic AI Solutions” as the public title, correcting the likely spelling typo “Principle” from the source document.
+- Do not add testimonials, client logos, exact lead conversion claims, or guarantees unless provided later.

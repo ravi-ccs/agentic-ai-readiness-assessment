@@ -156,3 +156,12 @@ details p { margin-bottom: 0; }
   .three-grid, .two-grid, .value-map, .proof-grid, .steps { grid-template-columns: 1fr; }
   .site-footer { flex-direction: column; }
 }
+
+.framework-grid ul { margin: 18px 0 0; padding-left: 21px; color: var(--muted); }
+.framework-grid li { margin-bottom: 8px; }
+.framework-card { min-height: 360px; }
+.framework-label { display: inline-block; margin-bottom: 14px; color: var(--blue); font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.78rem; }
+.pmo-band { background: #eef5fb; }
+.proof-grid-six { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 1050px) { .proof-grid-six { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 720px) { .proof-grid-six { grid-template-columns: 1fr; } }
