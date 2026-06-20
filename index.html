@@ -309,5 +309,32 @@
     <p>© 2026 Champlain Consulting Services. Agentic AI × Project Delivery × Business Outcomes.</p>
     <a href="mailto:contactus@champlainconsultingservices.com">contactus@champlainconsultingservices.com</a>
   </footer>
+  <aside class="chatbot-widget" aria-label="Champlain Consulting chatbot">
+    <button class="chatbot-toggle" type="button" data-chatbot-toggle aria-expanded="false" aria-controls="chatbot-panel">
+      <span class="material-symbols-outlined">chat</span>
+      <span>Chat with us</span>
+    </button>
+    <section class="chatbot-panel" id="chatbot-panel" data-chatbot-panel aria-live="polite">
+      <div class="chatbot-header">
+        <div>
+          <strong>Champlain AI Assistant</strong>
+          <span>Ask about AI agents, SMB readiness, or AI-driven PMO.</span>
+        </div>
+        <button type="button" data-chatbot-close aria-label="Close chatbot">×</button>
+      </div>
+      <div class="chatbot-transcript" data-chatbot-transcript></div>
+      <form class="chatbot-form" data-chatbot-form>
+        <div class="chatbot-field-grid">
+          <label>Name *<input name="name" autocomplete="name" required /></label>
+          <label>Email *<input type="email" name="email" autocomplete="email" required /></label>
+        </div>
+        <label>Phone optional<input name="phone" autocomplete="tel" /></label>
+        <label>How can we help? *<textarea name="message" rows="4" required placeholder="Tell us what you want to automate or improve..."></textarea></label>
+        <button class="button button-primary" type="submit">Send chat details</button>
+        <p class="chatbot-status" data-chatbot-status></p>
+      </form>
+    </section>
+  </aside>
+  <script src="chatbot.js" defer></script>
 </body>
 </html>
