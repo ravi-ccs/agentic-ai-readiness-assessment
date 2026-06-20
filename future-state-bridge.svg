@@ -1,0 +1,52 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Future state AI workflow bridge</title>
+  <desc id="desc">A distinct abstract visual showing business signals flowing from current operations into an AI-enabled future state.</desc>
+  <rect width="1200" height="360" rx="34" fill="url(#bg)"/>
+  <g opacity="0.95">
+    <circle cx="180" cy="180" r="82" fill="url(#leftGlow)"/>
+    <circle cx="1020" cy="180" r="96" fill="url(#rightGlow)"/>
+    <path d="M250 180 C390 82 498 280 620 180 C736 86 834 108 950 180" stroke="#00F1FE" stroke-width="8" stroke-linecap="round"/>
+    <path d="M250 180 C390 82 498 280 620 180 C736 86 834 108 950 180" stroke="white" stroke-opacity="0.62" stroke-width="2" stroke-linecap="round"/>
+    <path d="M250 214 C404 300 496 90 620 214 C752 322 838 245 950 214" stroke="#00696F" stroke-width="4" stroke-linecap="round" stroke-dasharray="16 18" opacity="0.7"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" font-weight="700">
+    <rect x="70" y="118" width="220" height="124" rx="24" fill="white" fill-opacity="0.82" stroke="#C4C6D0" stroke-opacity="0.55"/>
+    <text x="180" y="160" text-anchor="middle" font-size="19" fill="#001736">Current State</text>
+    <text x="180" y="193" text-anchor="middle" font-size="14" fill="#43474F" font-weight="500">manual work · unclear ROI</text>
+    <text x="180" y="218" text-anchor="middle" font-size="14" fill="#43474F" font-weight="500">fragmented customer journeys</text>
+
+    <rect x="490" y="92" width="220" height="176" rx="28" fill="white" fill-opacity="0.9" stroke="#00F1FE" stroke-opacity="0.55"/>
+    <text x="600" y="135" text-anchor="middle" font-size="19" fill="#001736">AI Roadmap</text>
+    <text x="600" y="169" text-anchor="middle" font-size="14" fill="#43474F" font-weight="500">prioritize · automate</text>
+    <text x="600" y="194" text-anchor="middle" font-size="14" fill="#43474F" font-weight="500">measure · govern</text>
+    <circle cx="600" cy="226" r="22" fill="#00F1FE" fill-opacity="0.22"/>
+    <path d="M590 226 L598 234 L613 216" stroke="#00696F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="910" y="118" width="220" height="124" rx="24" fill="white" fill-opacity="0.82" stroke="#C4C6D0" stroke-opacity="0.55"/>
+    <text x="1020" y="160" text-anchor="middle" font-size="19" fill="#001736">Future State</text>
+    <text x="1020" y="193" text-anchor="middle" font-size="14" fill="#43474F" font-weight="500">faster response · lower cost</text>
+    <text x="1020" y="218" text-anchor="middle" font-size="14" fill="#43474F" font-weight="500">measurable growth</text>
+  </g>
+  <g opacity="0.6">
+    <circle cx="350" cy="86" r="5" fill="#00F1FE"/>
+    <circle cx="420" cy="270" r="4" fill="#00696F"/>
+    <circle cx="790" cy="80" r="5" fill="#00F1FE"/>
+    <circle cx="845" cy="286" r="4" fill="#00696F"/>
+    <circle cx="1075" cy="84" r="5" fill="#00F1FE"/>
+  </g>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9FBFF"/>
+      <stop offset="0.48" stop-color="#EAF7FF"/>
+      <stop offset="1" stop-color="#F9F9F9"/>
+    </linearGradient>
+    <radialGradient id="leftGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 180) rotate(90) scale(82)">
+      <stop stop-color="#00F1FE" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#00F1FE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rightGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1020 180) rotate(90) scale(96)">
+      <stop stop-color="#A9C7FF" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#A9C7FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
