@@ -84,3 +84,11 @@ http://localhost:8080
 - Moved AI Solutions and Agentic PMO below How it works.
 - Changed top CTA to Book a Consultation.
 - Enhanced consultation form field length and added a dark form boundary/background.
+
+## Requested imagery refinements
+
+- Added a visual to the Growth without extra headcount tile.
+- Updated How it works heading text to remove the colon.
+- Added an approach roadmap visual in the Our Approach section and between sections.
+- Increased logo and brand text sizing further.
+- Used deterministic SVG visual fallbacks because the pasted prompt images were not available as files in the CLI session and image generation was not configured.
