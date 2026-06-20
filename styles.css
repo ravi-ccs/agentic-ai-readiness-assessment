@@ -486,3 +486,30 @@ details p { margin: 14px 0 0; max-width: 900px; }
   .chatbot-widget { right: 14px; bottom: 14px; }
   .chatbot-field-grid { grid-template-columns: 1fr; }
 }
+
+/* Chatbot response library quick replies */
+.chatbot-quick-replies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 4px 0 2px;
+}
+.chatbot-quick-replies button {
+  border: 1px solid rgba(0, 105, 111, .24);
+  border-radius: 999px;
+  padding: 8px 10px;
+  background: rgba(0, 241, 254, .12);
+  color: var(--primary);
+  font: inherit;
+  font-size: .78rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .16s ease, background .16s ease, border-color .16s ease;
+}
+.chatbot-quick-replies button:hover,
+.chatbot-quick-replies button:focus-visible {
+  transform: translateY(-1px);
+  background: rgba(0, 241, 254, .24);
+  border-color: rgba(0, 105, 111, .5);
+  outline: none;
+}
