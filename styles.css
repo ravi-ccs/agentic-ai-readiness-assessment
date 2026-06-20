@@ -207,11 +207,30 @@ details p { margin: 14px 0 0; max-width: 900px; }
   gap: 16px;
   font-size: clamp(1.08rem, 1.8vw, 1.42rem);
 }
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  line-height: 1.05;
+}
+.brand-name {
+  color: var(--primary);
+  font-weight: 800;
+}
+.brand-tagline {
+  color: var(--secondary);
+  font-family: Geist, sans-serif;
+  font-size: clamp(.64rem, .95vw, .78rem);
+  font-weight: 700;
+  letter-spacing: .04em;
+  white-space: nowrap;
+}
 .brand-mark {
-  width: 64px;
-  height: 64px;
+  width: 98px;
+  height: 58px;
   background: #ffffff;
-  overflow: hidden;
+  overflow: visible;
+  border-radius: 14px;
   box-shadow: 0 14px 28px -18px rgba(0, 23, 54, .45), inset 0 0 0 1px rgba(0, 23, 54, .08);
 }
 .brand-mark img {
