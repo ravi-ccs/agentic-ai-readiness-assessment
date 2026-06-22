@@ -362,6 +362,13 @@ details p { margin: 14px 0 0; max-width: 900px; }
 }
 
 /* Header logo final override + chatbot capture widget */
+.glass-nav {
+  height: 104px;
+  padding: 0 32px;
+}
+.hero {
+  padding-top: 178px;
+}
 .brand-mark {
   width: 112px;
   height: 60px;
@@ -370,6 +377,14 @@ details p { margin: 14px 0 0; max-width: 900px; }
 }
 .brand-copy {
   min-width: 230px;
+}
+@media (max-width: 1120px) {
+  .glass-nav { height: 96px; }
+  .hero { padding-top: 158px; }
+}
+@media (max-width: 760px) {
+  .glass-nav { height: 84px; }
+  .hero { padding-top: 132px; }
 }
 .chatbot-widget {
   position: fixed;
