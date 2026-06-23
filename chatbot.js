@@ -87,10 +87,10 @@
   ];
 
   const FALLBACK_RESPONSE = 'That is a good question. I can capture it for Champlain Consulting Services and Our Principal Consultant can follow up with a specific answer. Please share a little context about your business goal, workflow, or challenge so we can recommend the right next step.';
-  const LEAD_PROMPT = 'I can help with that. May I have your name, email ID, and phone number so Our Principal Consultant can follow up with relevant next steps? You can continue asking questions here too.';
+  const LEAD_PROMPT = 'I can help with that. If you would like Our Principal Consultant to follow up with relevant next steps, please add your phone number and any short message below. You can continue asking questions here too.';
 
   const messages = [
-    { role: 'assistant', text: 'How may I help you? Ask a question or select one of the options below.' }
+    { role: 'assistant', text: 'How may I help you? Please share your name and email ID, then ask a question or select one of the options below.' }
   ];
 
   let visitorMessageCount = 0;
