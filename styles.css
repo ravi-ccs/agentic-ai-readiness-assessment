@@ -374,6 +374,7 @@ details p { margin: 14px 0 0; max-width: 900px; }
   height: 60px;
   border-radius: 14px;
   overflow: visible;
+  transform: translateY(-10px);
 }
 .brand-copy {
   min-width: 230px;
