@@ -28,7 +28,7 @@
       label: 'AI Agents',
       prompt: 'What AI agents can help my business?',
       keywords: ['ai agent', 'agents', 'automation', 'workflow', 'workflows', 'automate', 'bot'],
-      response: 'Practical AI agents can help with customer support, lead intake, appointment booking, internal knowledge search, proposal support, project reporting, and operations follow-up. Champlain Consulting Services starts with a focused use case so the result is measurable and manageable. Which function would you like to improve first?'
+      response: 'Practical AI agents can help with customer support, lead intake, appointment booking, internal knowledge search, proposal support, project reporting, and operations follow-up. The best next step is an AI Readiness Assessment to identify the highest-value use case, business impact, data readiness, and implementation roadmap before building. Would you like to start with an AI assessment?'
     },
     {
       label: 'AI-Driven PMO',
@@ -64,7 +64,7 @@
       label: 'Knowledge Agent',
       prompt: 'What is an internal knowledge agent?',
       keywords: ['knowledge', 'onboarding', 'sop', 'documents', 'training', 'internal', 'policy', 'policies', 'manual'],
-      response: 'An internal knowledge agent answers employee questions from approved SOPs, policies, training material, and operational documents. It helps teams find answers faster and supports onboarding without relying on one person to explain the same information repeatedly. What documents or knowledge sources would you want it to use?'
+      response: 'An internal knowledge agent answers employee questions from approved SOPs, policies, training material, and operational documents. It helps teams find answers faster and supports onboarding without relying on one person to explain the same information repeatedly. A good next step is an AI Readiness Assessment to confirm whether a knowledge agent is the right first use case and define the roadmap before implementation.'
     },
     {
       label: 'Pricing / Cost',
