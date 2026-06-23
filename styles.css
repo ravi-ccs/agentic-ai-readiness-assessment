@@ -86,7 +86,8 @@ li { list-style: none; }
 .eyebrow, .card-kicker, .panel-label { font-family: Geist, sans-serif; font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--secondary); }
 .eyebrow { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 20px; padding: 8px 14px; border-radius: 999px; background: var(--cyan-soft); }
 h1, h2, h3, p { margin-top: 0; }
-h1 { max-width: 900px; margin-bottom: 24px; color: var(--primary); font-size: clamp(3rem, 7vw, 6.4rem); line-height: .94; letter-spacing: -.06em; font-weight: 800; }
+h1 { max-width: 900px; margin-bottom: 24px; color: var(--primary); font-size: clamp(2.8rem, 6.2vw, 5.65rem); line-height: .94; letter-spacing: -.06em; font-weight: 800; }
+.nowrap { white-space: nowrap; }
 h2 { color: var(--primary); font-size: clamp(2.2rem, 4vw, 4.4rem); line-height: 1; letter-spacing: -.045em; font-weight: 800; margin-bottom: 20px; }
 h3 { color: var(--primary); font-size: 1.28rem; line-height: 1.18; letter-spacing: -.02em; margin-bottom: 12px; }
 p { color: var(--muted); font-size: 1.05rem; line-height: 1.7; }
@@ -188,7 +189,8 @@ details p { margin: 14px 0 0; max-width: 900px; }
   .nav-button { min-height: 40px; padding: 0 16px; font-size: .92rem; }
   .hero { min-height: auto; padding-top: 112px; gap: 28px; }
   .section { padding: 58px 0; }
-  h1 { font-size: clamp(3rem, 16vw, 4.25rem); }
+  h1 { font-size: clamp(2.7rem, 14vw, 3.9rem); }
+  .nowrap { white-space: normal; }
   h2 { font-size: clamp(2rem, 10vw, 3rem); }
   .cta-row, .button { width: 100%; }
   .button { padding-inline: 18px; }
