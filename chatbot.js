@@ -87,7 +87,7 @@
   ];
 
   const FALLBACK_RESPONSE = 'That is a good question. I can capture it for Champlain Consulting Services and Ravi can follow up with a specific answer. Please share a little context about your business goal, workflow, or challenge so we can recommend the right next step.';
-  const LEAD_PROMPT = 'I can help with that. May I have your name and email ID so Ravi can follow up with relevant next steps? You can continue asking questions here too.';
+  const LEAD_PROMPT = 'I can help with that. May I have your name, email ID, and phone number so Ravi can follow up with relevant next steps? You can continue asking questions here too.';
 
   const messages = [
     { role: 'assistant', text: 'How may I help you' }
@@ -139,8 +139,8 @@
 
   function showContactPanel() {
     if (contactPanel) contactPanel.hidden = false;
-    const submitButton = form.querySelector('button[type="submit"]');
-    if (submitButton) submitButton.textContent = 'Send message + details';
+    const messageButton = form.querySelector('[data-chatbot-message-submit]');
+    if (messageButton) messageButton.textContent = 'Send message + details';
   }
 
   function getPayload(messageText) {
@@ -190,17 +190,24 @@
     }
   }
 
-  async function submitLeadIfReady(latestMessage) {
+  async function submitLeadIfReady(latestMessage, requireContact = false) {
     const payload = getPayload(latestMessage);
-    if (!payload.name || !payload.email) return false;
+    if (requireContact && (!payload.name || !payload.email || !payload.phone)) {
+      showContactPanel();
+      status.textContent = 'Please add your name, email, and phone number before submitting lead details.';
+      return false;
+    }
+    if (!payload.name || !payload.email || !payload.phone) return false;
 
     if (payload.transcript === lastSubmittedTranscript && leadCaptured) {
       status.textContent = 'Thanks — your latest chat details have already been submitted.';
       return true;
     }
 
-    const submitButton = form.querySelector('button[type="submit"]');
-    if (submitButton) submitButton.disabled = true;
+    const messageButton = form.querySelector('[data-chatbot-message-submit]');
+    const leadButton = form.querySelector('[data-chatbot-lead-submit]');
+    if (messageButton) messageButton.disabled = true;
+    if (leadButton) leadButton.disabled = true;
     status.textContent = 'Sending chat details...';
 
     try {
@@ -224,7 +231,8 @@
       status.textContent = 'The chatbot could not submit details right now. Please email contactus@champlainconsultingservices.com or call +1 248-688-9569.';
       return false;
     } finally {
-      if (submitButton) submitButton.disabled = false;
+      if (messageButton) messageButton.disabled = false;
+      if (leadButton) leadButton.disabled = false;
     }
   }
 
@@ -254,9 +262,12 @@
     await submitLeadIfReady(messageText);
   });
 
-  form.addEventListener('change', async (event) => {
-    if (!event.target.matches('input[name="name"], input[name="email"], input[name="phone"]')) return;
-    if (visitorMessageCount > 0) await submitLeadIfReady('Visitor shared contact details.');
+  form.querySelector('[data-chatbot-lead-submit]')?.addEventListener('click', async () => {
+    if (visitorMessageCount === 0) {
+      status.textContent = 'Please ask a question first, then submit your lead details.';
+      return;
+    }
+    await submitLeadIfReady('Visitor submitted lead details.', true);
   });
 
   renderTranscript();

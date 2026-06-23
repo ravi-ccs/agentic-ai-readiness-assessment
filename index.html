@@ -324,15 +324,16 @@
       </div>
       <div class="chatbot-transcript" data-chatbot-transcript></div>
       <form class="chatbot-form" data-chatbot-form>
+        <label class="chatbot-message-label">Your message<textarea name="message" rows="2" required placeholder="Ask a question or choose a suggested topic..."></textarea></label>
+        <button class="button button-primary" type="submit" data-chatbot-message-submit>Send message</button>
         <div class="chatbot-contact-panel" data-chatbot-contact hidden>
           <div class="chatbot-field-grid">
             <label>Name *<input name="name" autocomplete="name" /></label>
             <label>Email *<input type="email" name="email" autocomplete="email" /></label>
           </div>
-          <label>Phone optional<input name="phone" autocomplete="tel" /></label>
+          <label>Phone *<input name="phone" autocomplete="tel" /></label>
+          <button class="button button-secondary chatbot-lead-submit" type="button" data-chatbot-lead-submit>Submit lead details</button>
         </div>
-        <label class="chatbot-message-label">Your message<textarea name="message" rows="2" required placeholder="Ask a question or choose a suggested topic..."></textarea></label>
-        <button class="button button-primary" type="submit">Send message</button>
         <p class="chatbot-status" data-chatbot-status></p>
       </form>
     </section>
