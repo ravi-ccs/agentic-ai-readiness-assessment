@@ -86,11 +86,11 @@
     }
   ];
 
-  const FALLBACK_RESPONSE = 'That is a good question. I can capture it for Champlain Consulting Services and Ravi can follow up with a specific answer. Please share a little context about your business goal, workflow, or challenge so we can recommend the right next step.';
-  const LEAD_PROMPT = 'I can help with that. May I have your name, email ID, and phone number so Ravi can follow up with relevant next steps? You can continue asking questions here too.';
+  const FALLBACK_RESPONSE = 'That is a good question. I can capture it for Champlain Consulting Services and Our Principal Consultant can follow up with a specific answer. Please share a little context about your business goal, workflow, or challenge so we can recommend the right next step.';
+  const LEAD_PROMPT = 'I can help with that. May I have your name, email ID, and phone number so Our Principal Consultant can follow up with relevant next steps? You can continue asking questions here too.';
 
   const messages = [
-    { role: 'assistant', text: 'How may I help you' }
+    { role: 'assistant', text: 'How may I help you? Ask a question or select one of the options below.' }
   ];
 
   let visitorMessageCount = 0;
@@ -140,19 +140,21 @@
   function showContactPanel() {
     if (contactPanel) contactPanel.hidden = false;
     const messageButton = form.querySelector('[data-chatbot-message-submit]');
-    if (messageButton) messageButton.textContent = 'Send message + details';
+    if (messageButton) messageButton.textContent = 'Send Message';
   }
 
   function getPayload(messageText) {
     const formData = new FormData(form);
+    const principalMessage = String(formData.get('principal_message') || '').trim();
+    const transcript = messages.map((message) => `${message.role}: ${message.text}`).join('\n');
     return {
       timestamp: new Date().toISOString(),
       name: String(formData.get('name') || '').trim(),
       email: String(formData.get('email') || '').trim(),
       phone: String(formData.get('phone') || '').trim(),
-      message: String(messageText || formData.get('message') || '').trim(),
+      message: String(messageText || formData.get('message') || principalMessage || '').trim(),
       pageUrl: window.location.href,
-      transcript: messages.map((message) => `${message.role}: ${message.text}`).join('\n')
+      transcript: principalMessage ? `${transcript}\nvisitor message for Our Principal Consultant: ${principalMessage}` : transcript
     };
   }
 
@@ -177,9 +179,9 @@
       leadPromptShown = true;
       showContactPanel();
       messages.push({ role: 'assistant', text: LEAD_PROMPT });
-      status.textContent = 'Optional: add your name and email so Ravi can follow up with relevant next steps.';
+      status.textContent = 'Optional: add your name, email, and phone so Our Principal Consultant can follow up with relevant next steps.';
     } else if (!leadCaptured) {
-      status.textContent = 'You can keep asking questions. Add your name and email anytime to send the chat for follow-up.';
+      status.textContent = 'You can keep asking questions. Add your name, email, and phone anytime to send the chat for follow-up.';
     }
 
     renderTranscript();
@@ -194,7 +196,7 @@
     const payload = getPayload(latestMessage);
     if (requireContact && (!payload.name || !payload.email || !payload.phone)) {
       showContactPanel();
-      status.textContent = 'Please add your name, email, and phone number before submitting lead details.';
+      status.textContent = 'Please add your name, email, and phone number before submitting details.';
       return false;
     }
     if (!payload.name || !payload.email || !payload.phone) return false;
@@ -264,10 +266,10 @@
 
   form.querySelector('[data-chatbot-lead-submit]')?.addEventListener('click', async () => {
     if (visitorMessageCount === 0) {
-      status.textContent = 'Please ask a question first, then submit your lead details.';
+      status.textContent = 'Please ask a question first, then submit your details.';
       return;
     }
-    await submitLeadIfReady('Visitor submitted lead details.', true);
+    await submitLeadIfReady('Visitor submitted details.', true);
   });
 
   renderTranscript();

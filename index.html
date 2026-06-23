@@ -318,21 +318,22 @@
       <div class="chatbot-header">
         <div>
           <strong>Champlain AI Assistant</strong>
-          <span>Ask about AI agents, SMB readiness, or AI-driven PMO.</span>
+          <span>Explore practical AI solutions for business growth and efficiency.</span>
         </div>
         <button type="button" data-chatbot-close aria-label="Close chatbot">×</button>
       </div>
       <div class="chatbot-transcript" data-chatbot-transcript></div>
       <form class="chatbot-form" data-chatbot-form>
         <label class="chatbot-message-label">Your message<textarea name="message" rows="2" required placeholder="Ask a question or choose a suggested topic..."></textarea></label>
-        <button class="button button-primary" type="submit" data-chatbot-message-submit>Send message</button>
+        <button class="button button-primary" type="submit" data-chatbot-message-submit>Send Message</button>
         <div class="chatbot-contact-panel" data-chatbot-contact hidden>
           <div class="chatbot-field-grid">
             <label>Name *<input name="name" autocomplete="name" /></label>
             <label>Email *<input type="email" name="email" autocomplete="email" /></label>
           </div>
           <label>Phone *<input name="phone" autocomplete="tel" /></label>
-          <button class="button button-secondary chatbot-lead-submit" type="button" data-chatbot-lead-submit>Submit lead details</button>
+          <label>Message for Our Principal Consultant<textarea name="principal_message" rows="2" placeholder="Add any context you want our Principal Consultant to know..."></textarea></label>
+          <button class="button button-secondary chatbot-lead-submit" type="button" data-chatbot-lead-submit>Submit Details</button>
         </div>
         <p class="chatbot-status" data-chatbot-status></p>
       </form>
