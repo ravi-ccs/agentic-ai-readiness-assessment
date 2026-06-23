@@ -363,11 +363,11 @@ details p { margin: 14px 0 0; max-width: 900px; }
 
 /* Header logo final override + chatbot capture widget */
 .glass-nav {
-  height: 104px;
-  padding: 0 32px;
+  height: 132px;
+  padding: 0 36px;
 }
 .hero {
-  padding-top: 178px;
+  padding-top: 214px;
 }
 .brand-mark {
   width: 112px;
@@ -379,12 +379,12 @@ details p { margin: 14px 0 0; max-width: 900px; }
   min-width: 230px;
 }
 @media (max-width: 1120px) {
-  .glass-nav { height: 96px; }
-  .hero { padding-top: 158px; }
+  .glass-nav { height: 118px; }
+  .hero { padding-top: 188px; }
 }
 @media (max-width: 760px) {
-  .glass-nav { height: 84px; }
-  .hero { padding-top: 132px; }
+  .glass-nav { height: 104px; }
+  .hero { padding-top: 156px; }
 }
 .chatbot-widget {
   position: fixed;
