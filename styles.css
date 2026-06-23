@@ -413,8 +413,8 @@ details p { margin: 14px 0 0; max-width: 900px; }
   position: absolute;
   right: 0;
   bottom: 70px;
-  width: min(390px, calc(100vw - 32px));
-  max-height: min(680px, calc(100vh - 120px));
+  width: min(460px, calc(100vw - 32px));
+  max-height: min(760px, calc(100vh - 110px));
   display: none;
   overflow: hidden;
   border-radius: 24px;
@@ -447,7 +447,7 @@ details p { margin: 14px 0 0; max-width: 900px; }
 .chatbot-transcript {
   display: grid;
   gap: 10px;
-  max-height: 180px;
+  max-height: 330px;
   overflow-y: auto;
   padding: 18px 18px 0;
 }
@@ -467,6 +467,15 @@ details p { margin: 14px 0 0; max-width: 900px; }
   display: grid;
   gap: 12px;
   padding: 18px;
+}
+.chatbot-contact-panel[hidden] { display: none; }
+.chatbot-contact-panel {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 18px;
+  background: rgba(0, 241, 254, .08);
+  border: 1px solid rgba(0, 105, 111, .16);
 }
 .chatbot-field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .chatbot-form label {
@@ -494,6 +503,8 @@ details p { margin: 14px 0 0; max-width: 900px; }
 }
 .chatbot-form .button { width: 100%; border: 0; cursor: pointer; }
 .chatbot-form .button:disabled { opacity: .62; cursor: wait; }
+.chatbot-message-label textarea { min-height: 64px; resize: vertical; }
+.chat-message a { color: var(--primary); font-weight: 900; text-decoration: underline; }
 .chatbot-status { min-height: 1.2em; margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.35; }
 @media (max-width: 760px) {
   .brand-mark { width: 82px; height: 46px; }
